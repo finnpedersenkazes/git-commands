@@ -36,7 +36,7 @@ git push -u origin master
 |**Command**|**Explanation**|
 | :- | :- |
 |`git clone <link>`|Clone project from github|
-|<p>or ...</p><p>`mkdir new\project`</p><p>`cd new_project`</p><p>`git init`</p><p>**`hub create`**</p>|<p>Create new project manually</p><p></p><p></p><p>It will get the name of your folder</p><p></p><p>https://hub.github.com/hub-create.1.html</p>|
+|<p>or ...</p><p>`mkdir new\project`</p><p>`cd new_project`</p><p>`git init`</p><p>**`hub create -p`**</p>|<p>Create new project manually</p><p></p><p></p><p>It will get the name of your folder</p><p></p><p>https://hub.github.com/hub-create.1.html</p>|
 |<p>`git status`</p>|What has changed since last commit|
 |<p>`git add .`</p><p>`git add filename`</p>|<p>git add all</p><p>Adding the changes to the staging area</p>|
 |`git commit -m "message"`|Commit the changes to the history|
