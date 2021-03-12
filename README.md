@@ -162,7 +162,7 @@ Don't worry. You are certainly not the first.
 
 ````
 git stash 
-git branch -b tempbranch 
+git checkout -b tempbranch 
 git stash pop
 ````
 
