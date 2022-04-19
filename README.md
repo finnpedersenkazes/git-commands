@@ -28,7 +28,7 @@ git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/my-github-profile-name/My-New-Project.git
-git push -u origin master
+git push -u origin main
 ````
 
 *Note that the `-u` in the push command is important. This allows you to simply write `git push` in the future.*
@@ -42,14 +42,13 @@ git push -u origin master
 |`git commit -m "message"`|Commit the changes to the history|
 |<p>`git log`</p>|Change history|
 |<p>`git diff filename or folder`</p><p>`git diff`</p><p></p>|<p>What has changed</p><p>No argument gives all changes</p><p>Only changes not added or committed. Only unstaged files</p>|
-|`git pull origin master`|Download latest changes from github|
+|`git pull origin main`|Download latest changes from github|
 
 ## Most used commands
 Before making changes, you should always make a new branch. 
 
-You can commit from the `master` branch on your own private project, but it is in general not a good idea. If you are two or more working on the project, you should prevent checking in from the master branch. You do that in the settings for the project on Github. 
 
-On the project, select Settings, Branches, Branch protection rule. Enter `master` in the Branch name pattern, and check the first setting *Require pull request reviews before merging*. You will not regret it. 
+On the project, select Settings, Branches, Branch protection rule. Enter `main` in the Branch name pattern, and check the first setting *Require pull request reviews before merging*. You will not regret it. 
 
 ````
 git checkout -b name-of-new-branch
@@ -60,12 +59,12 @@ git status
 git add .
 git commit -m 'description of changes'
 git push origin name-of-new-branch
-git checkout master
+git checkout main
 
 > accept pull request on Git Hub
 
-git pull origin master
-git push heroku master (If you are deploying your chages to Heroku)
+git pull origin main
+git push heroku main (If you are deploying your chages to Heroku)
 ````
 
 ## More reading
@@ -89,7 +88,7 @@ ssh-add -K
 ## Check your path to GitHub and Heroku
 Is your link to GitHub missing? Try this. 
 ````
-test-app-vue-01 git:(master) git remote -v
+test-app-vue-01 git:(main) git remote -v
 
 heroku	https://git.heroku.com/test-app-vue-01.git (fetch)
 heroku	https://git.heroku.com/test-app-vue-01.git (push)
@@ -126,7 +125,7 @@ git reset --hard origin/develop
 or
 
 ````
-git reset --hard origin/master
+git reset --hard origin/main
 ````
 
 *Note: Please, read about the `reset` command before using it.*
@@ -147,7 +146,7 @@ git fetch --all
 Then, you have two options:
 
 ````
-git reset --hard origin/master
+git reset --hard origin/main
 ````
 
 OR If you are on some other branch:
@@ -155,7 +154,7 @@ OR If you are on some other branch:
 ````
 git reset --hard origin/<branch_name>
 ````
-## If you made changes on the master branch
+## If you made changes on the main branch
 I told you not to do it. But I know your problem. 
 You got all excited about your new idea and forgot to branch. 
 Don't worry. You are certainly not the first. 
@@ -175,18 +174,18 @@ git push origin tempbranch
 
 > make pull request and merge
 
-git checkout master
-git pull origin master
+git checkout main
+git pull origin main
 ````
 
 and continue your work as if nothing happened. 
 
-## Merge your branch with master
+## Merge your branch with main
 ````
-git checkout master
-git pull origin master
+git checkout main
+git pull origin main
 git checkout your-branch
-git merge master
+git merge main
 ````
 
 This procedure works. 
