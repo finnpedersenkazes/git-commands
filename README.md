@@ -262,15 +262,12 @@ $ git config --global user.email
 >finnpedersenfrance@gmail.com
 ````
 
-See also: https://help.github.com/en/articles/setting-your-username-in-git
+See also: https://alvinalexander.com/git/git-show-change-username-email-address
 
 ````
 $ git config --list
 ````
 
-
-
-https://alvinalexander.com/git/git-show-change-username-email-address/#:~:text=There%20are%20at%20least%20three,in%20your%20Git%20configuration%20file
 
 
 ## Help, I keep getting a 'Permission Denied (publickey)' error when I push!
